@@ -50,6 +50,8 @@ class AudioPlayManager: NSObject {
         engine.connect(audioUnitTimePitch, to: engine.mainMixerNode, format: audioFile.processingFormat)
         
         engine.prepare()
+        
+        try? AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
         audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: { [weak self] in
             print("Completion.")
             self?.delegate?.didFinishPlay()
