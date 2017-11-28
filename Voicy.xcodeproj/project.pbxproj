@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B05C3891FCAC6E9008FE804 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4B05C3881FCAC6E9008FE804 /* sample.mp3 */; };
+		4B08D5F11FA9BAA70064DB71 /* TopExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B08D5F01FA9BAA70064DB71 /* TopExtension.swift */; };
+		4B1A828F1FA986F60016C14F /* Play.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1A828E1FA986F60016C14F /* Play.storyboard */; };
+		4B1A82911FA9870B0016C14F /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82901FA9870B0016C14F /* PlayController.swift */; };
+		4B1A82931FA98D4F0016C14F /* PlayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82921FA98D4F0016C14F /* PlayExtension.swift */; };
+		4B1A82951FA98D8A0016C14F /* PlayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82941FA98D8A0016C14F /* PlayViewModel.swift */; };
+		4B1A82971FA98DAC0016C14F /* PlayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82961FA98DAC0016C14F /* PlayInfo.swift */; };
+		4B1A829A1FA991660016C14F /* VoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82991FA991660016C14F /* VoiceCell.swift */; };
+		4B1A829C1FA9A51F0016C14F /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A829B1FA9A51F0016C14F /* AppUtility.swift */; };
+		4B1A829F1FA9A6910016C14F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A829E1FA9A6910016C14F /* UIColor.swift */; };
+		4B5DB6F51FAA18990058C8AC /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */; };
+		4B66D9311FA881A800B861A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9301FA881A800B861A3 /* AppDelegate.swift */; };
+		4B66D9331FA881A800B861A3 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9321FA881A800B861A3 /* TopController.swift */; };
+		4B66D9361FA881A800B861A3 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B66D9341FA881A800B861A3 /* Top.storyboard */; };
+		4B66D9381FA881A800B861A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B66D9371FA881A800B861A3 /* Assets.xcassets */; };
+		4B66D93B1FA881A800B861A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B66D9391FA881A800B861A3 /* LaunchScreen.storyboard */; };
+		4B66D9461FA881A800B861A3 /* VoicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9451FA881A800B861A3 /* VoicyTests.swift */; };
+		4B66D9511FA881A800B861A3 /* VoicyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9501FA881A800B861A3 /* VoicyUITests.swift */; };
+		4BE5EB8C1FA95478003DB6B2 /* TopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB8B1FA95478003DB6B2 /* TopViewModel.swift */; };
+		4BE5EB901FA95677003DB6B2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB8F1FA95677003DB6B2 /* AppConstants.swift */; };
+		4BE5EB931FA956E8003DB6B2 /* VoicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB921FA956E8003DB6B2 /* VoicyViewController.swift */; };
+		4BE5EB951FA95792003DB6B2 /* AudioRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB941FA95792003DB6B2 /* AudioRecordManager.swift */; };
+		4BE5EB9D1FA95B30003DB6B2 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB9C1FA95B30003DB6B2 /* WaveView.m */; };
+		8A4A434AAA597FD956A6677C /* Pods_Voicy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964FB6D1EE713FCC0EEC2522 /* Pods_Voicy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B66D9421FA881A800B861A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B66D9251FA881A800B861A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B66D92C1FA881A800B861A3;
+			remoteInfo = Voicy;
+		};
+		4B66D94D1FA881A800B861A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B66D9251FA881A800B861A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B66D92C1FA881A800B861A3;
+			remoteInfo = Voicy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2524F3ACC1877B77B4AA96E0 /* Pods-Voicy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voicy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voicy/Pods-Voicy.debug.xcconfig"; sourceTree = "<group>"; };
+		272BEAA2BA3AFF88331077C5 /* Pods-Voicy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voicy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voicy/Pods-Voicy.release.xcconfig"; sourceTree = "<group>"; };
+		4B05C3881FCAC6E9008FE804 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+		4B08D5F01FA9BAA70064DB71 /* TopExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExtension.swift; sourceTree = "<group>"; };
+		4B1A828E1FA986F60016C14F /* Play.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Play.storyboard; sourceTree = "<group>"; };
+		4B1A82901FA9870B0016C14F /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
+		4B1A82921FA98D4F0016C14F /* PlayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayExtension.swift; sourceTree = "<group>"; };
+		4B1A82941FA98D8A0016C14F /* PlayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewModel.swift; sourceTree = "<group>"; };
+		4B1A82961FA98DAC0016C14F /* PlayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayInfo.swift; sourceTree = "<group>"; };
+		4B1A82991FA991660016C14F /* VoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCell.swift; sourceTree = "<group>"; };
+		4B1A829B1FA9A51F0016C14F /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		4B1A829E1FA9A6910016C14F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
+		4B66D92D1FA881A800B861A3 /* Voicy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voicy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B66D9301FA881A800B861A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B66D9321FA881A800B861A3 /* TopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
+		4B66D9351FA881A800B861A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Top.storyboard; sourceTree = "<group>"; };
+		4B66D9371FA881A800B861A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B66D93A1FA881A800B861A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B66D93C1FA881A800B861A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B66D9411FA881A800B861A3 /* VoicyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoicyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B66D9451FA881A800B861A3 /* VoicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyTests.swift; sourceTree = "<group>"; };
+		4B66D9471FA881A800B861A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B66D94C1FA881A800B861A3 /* VoicyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoicyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B66D9501FA881A800B861A3 /* VoicyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyUITests.swift; sourceTree = "<group>"; };
+		4B66D9521FA881A800B861A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE5EB8B1FA95478003DB6B2 /* TopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewModel.swift; sourceTree = "<group>"; };
+		4BE5EB8F1FA95677003DB6B2 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		4BE5EB921FA956E8003DB6B2 /* VoicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyViewController.swift; sourceTree = "<group>"; };
+		4BE5EB941FA95792003DB6B2 /* AudioRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordManager.swift; sourceTree = "<group>"; };
+		4BE5EB971FA95AFF003DB6B2 /* Voicy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voicy-Bridging-Header.h"; sourceTree = "<group>"; };
+		4BE5EB9B1FA95B30003DB6B2 /* WaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		4BE5EB9C1FA95B30003DB6B2 /* WaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
+		964FB6D1EE713FCC0EEC2522 /* Pods_Voicy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voicy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B66D92A1FA881A800B861A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4A434AAA597FD956A6677C /* Pods_Voicy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B66D93E1FA881A800B861A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B66D9491FA881A800B861A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E3F728EFF51B54B1ED73DCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2524F3ACC1877B77B4AA96E0 /* Pods-Voicy.debug.xcconfig */,
+				272BEAA2BA3AFF88331077C5 /* Pods-Voicy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B1A828D1FA986A90016C14F /* play */ = {
+			isa = PBXGroup;
+			children = (
+				4B1A82981FA991460016C14F /* cells */,
+				4B1A828E1FA986F60016C14F /* Play.storyboard */,
+				4B1A82901FA9870B0016C14F /* PlayController.swift */,
+				4B1A82921FA98D4F0016C14F /* PlayExtension.swift */,
+				4B1A82941FA98D8A0016C14F /* PlayViewModel.swift */,
+				4B1A82961FA98DAC0016C14F /* PlayInfo.swift */,
+			);
+			path = play;
+			sourceTree = "<group>";
+		};
+		4B1A82981FA991460016C14F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4B1A82991FA991660016C14F /* VoiceCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		4B1A829D1FA9A6880016C14F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B1A829E1FA9A6910016C14F /* UIColor.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		4B66D9241FA881A800B861A3 = {
+			isa = PBXGroup;
+			children = (
+				4B66D92F1FA881A800B861A3 /* Voicy */,
+				4B66D9441FA881A800B861A3 /* VoicyTests */,
+				4B66D94F1FA881A800B861A3 /* VoicyUITests */,
+				4B66D92E1FA881A800B861A3 /* Products */,
+				1E3F728EFF51B54B1ED73DCD /* Pods */,
+				C16FA089F7F7C3892C8E9E13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4B66D92E1FA881A800B861A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B66D92D1FA881A800B861A3 /* Voicy.app */,
+				4B66D9411FA881A800B861A3 /* VoicyTests.xctest */,
+				4B66D94C1FA881A800B861A3 /* VoicyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B66D92F1FA881A800B861A3 /* Voicy */ = {
+			isa = PBXGroup;
+			children = (
+				4B05C3881FCAC6E9008FE804 /* sample.mp3 */,
+				4B66D9371FA881A800B861A3 /* Assets.xcassets */,
+				4B66D9391FA881A800B861A3 /* LaunchScreen.storyboard */,
+				4B66D93C1FA881A800B861A3 /* Info.plist */,
+				4BE5EB971FA95AFF003DB6B2 /* Voicy-Bridging-Header.h */,
+				4B66D95E1FA881BC00B861A3 /* Sources */,
+			);
+			path = Voicy;
+			sourceTree = "<group>";
+		};
+		4B66D9441FA881A800B861A3 /* VoicyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B66D9451FA881A800B861A3 /* VoicyTests.swift */,
+				4B66D9471FA881A800B861A3 /* Info.plist */,
+			);
+			path = VoicyTests;
+			sourceTree = "<group>";
+		};
+		4B66D94F1FA881A800B861A3 /* VoicyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B66D9501FA881A800B861A3 /* VoicyUITests.swift */,
+				4B66D9521FA881A800B861A3 /* Info.plist */,
+			);
+			path = VoicyUITests;
+			sourceTree = "<group>";
+		};
+		4B66D95E1FA881BC00B861A3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B66D9301FA881A800B861A3 /* AppDelegate.swift */,
+				4BE5EB8D1FA95662003DB6B2 /* common */,
+				4B66D95F1FA8894A00B861A3 /* pages */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B66D95F1FA8894A00B861A3 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				4B66D9601FA8895800B861A3 /* top */,
+				4B1A828D1FA986A90016C14F /* play */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		4B66D9601FA8895800B861A3 /* top */ = {
+			isa = PBXGroup;
+			children = (
+				4BE5EB961FA95AE3003DB6B2 /* parts */,
+				4B66D9341FA881A800B861A3 /* Top.storyboard */,
+				4B66D9321FA881A800B861A3 /* TopController.swift */,
+				4B08D5F01FA9BAA70064DB71 /* TopExtension.swift */,
+				4BE5EB8B1FA95478003DB6B2 /* TopViewModel.swift */,
+			);
+			path = top;
+			sourceTree = "<group>";
+		};
+		4BE5EB8D1FA95662003DB6B2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				4B1A829D1FA9A6880016C14F /* extension */,
+				4BE5EB911FA956CA003DB6B2 /* utility */,
+				4BE5EB8E1FA9566B003DB6B2 /* ui */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		4BE5EB8E1FA9566B003DB6B2 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4BE5EB921FA956E8003DB6B2 /* VoicyViewController.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		4BE5EB911FA956CA003DB6B2 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				4BE5EB941FA95792003DB6B2 /* AudioRecordManager.swift */,
+				4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */,
+				4BE5EB8F1FA95677003DB6B2 /* AppConstants.swift */,
+				4B1A829B1FA9A51F0016C14F /* AppUtility.swift */,
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		4BE5EB961FA95AE3003DB6B2 /* parts */ = {
+			isa = PBXGroup;
+			children = (
+				4BE5EB9B1FA95B30003DB6B2 /* WaveView.h */,
+				4BE5EB9C1FA95B30003DB6B2 /* WaveView.m */,
+			);
+			path = parts;
+			sourceTree = "<group>";
+		};
+		C16FA089F7F7C3892C8E9E13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964FB6D1EE713FCC0EEC2522 /* Pods_Voicy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B66D92C1FA881A800B861A3 /* Voicy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B66D9551FA881A800B861A3 /* Build configuration list for PBXNativeTarget "Voicy" */;
+			buildPhases = (
+				971E684D420EB46D9F117140 /* [CP] Check Pods Manifest.lock */,
+				4B66D9291FA881A800B861A3 /* Sources */,
+				4B66D92A1FA881A800B861A3 /* Frameworks */,
+				4B66D92B1FA881A800B861A3 /* Resources */,
+				254B286713D80BBC892F3189 /* [CP] Embed Pods Frameworks */,
+				12B18AD1E63964104EFA7D48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voicy;
+			productName = Voicy;
+			productReference = 4B66D92D1FA881A800B861A3 /* Voicy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B66D9401FA881A800B861A3 /* VoicyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B66D9581FA881A800B861A3 /* Build configuration list for PBXNativeTarget "VoicyTests" */;
+			buildPhases = (
+				4B66D93D1FA881A800B861A3 /* Sources */,
+				4B66D93E1FA881A800B861A3 /* Frameworks */,
+				4B66D93F1FA881A800B861A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B66D9431FA881A800B861A3 /* PBXTargetDependency */,
+			);
+			name = VoicyTests;
+			productName = VoicyTests;
+			productReference = 4B66D9411FA881A800B861A3 /* VoicyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B66D94B1FA881A800B861A3 /* VoicyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B66D95B1FA881A800B861A3 /* Build configuration list for PBXNativeTarget "VoicyUITests" */;
+			buildPhases = (
+				4B66D9481FA881A800B861A3 /* Sources */,
+				4B66D9491FA881A800B861A3 /* Frameworks */,
+				4B66D94A1FA881A800B861A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B66D94E1FA881A800B861A3 /* PBXTargetDependency */,
+			);
+			name = VoicyUITests;
+			productName = VoicyUITests;
+			productReference = 4B66D94C1FA881A800B861A3 /* VoicyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B66D9251FA881A800B861A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = liqc;
+				TargetAttributes = {
+					4B66D92C1FA881A800B861A3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					4B66D9401FA881A800B861A3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B66D92C1FA881A800B861A3;
+					};
+					4B66D94B1FA881A800B861A3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B66D92C1FA881A800B861A3;
+					};
+				};
+			};
+			buildConfigurationList = 4B66D9281FA881A800B861A3 /* Build configuration list for PBXProject "Voicy" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B66D9241FA881A800B861A3;
+			productRefGroup = 4B66D92E1FA881A800B861A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B66D92C1FA881A800B861A3 /* Voicy */,
+				4B66D9401FA881A800B861A3 /* VoicyTests */,
+				4B66D94B1FA881A800B861A3 /* VoicyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B66D92B1FA881A800B861A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1A828F1FA986F60016C14F /* Play.storyboard in Resources */,
+				4B66D93B1FA881A800B861A3 /* LaunchScreen.storyboard in Resources */,
+				4B66D9381FA881A800B861A3 /* Assets.xcassets in Resources */,
+				4B66D9361FA881A800B861A3 /* Top.storyboard in Resources */,
+				4B05C3891FCAC6E9008FE804 /* sample.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B66D93F1FA881A800B861A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B66D94A1FA881A800B861A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12B18AD1E63964104EFA7D48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voicy/Pods-Voicy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		254B286713D80BBC892F3189 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Voicy/Pods-Voicy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQAudioRecorderController/IQAudioRecorderController.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCSiriWaveformView/SCSiriWaveformView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQAudioRecorderController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCSiriWaveformView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voicy/Pods-Voicy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		971E684D420EB46D9F117140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Voicy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B66D9291FA881A800B861A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B1A829A1FA991660016C14F /* VoiceCell.swift in Sources */,
+				4B1A829F1FA9A6910016C14F /* UIColor.swift in Sources */,
+				4BE5EB931FA956E8003DB6B2 /* VoicyViewController.swift in Sources */,
+				4B1A82911FA9870B0016C14F /* PlayController.swift in Sources */,
+				4B5DB6F51FAA18990058C8AC /* AudioPlayManager.swift in Sources */,
+				4B1A82971FA98DAC0016C14F /* PlayInfo.swift in Sources */,
+				4B08D5F11FA9BAA70064DB71 /* TopExtension.swift in Sources */,
+				4B1A82951FA98D8A0016C14F /* PlayViewModel.swift in Sources */,
+				4B1A82931FA98D4F0016C14F /* PlayExtension.swift in Sources */,
+				4BE5EB9D1FA95B30003DB6B2 /* WaveView.m in Sources */,
+				4B66D9331FA881A800B861A3 /* TopController.swift in Sources */,
+				4BE5EB8C1FA95478003DB6B2 /* TopViewModel.swift in Sources */,
+				4B1A829C1FA9A51F0016C14F /* AppUtility.swift in Sources */,
+				4B66D9311FA881A800B861A3 /* AppDelegate.swift in Sources */,
+				4BE5EB901FA95677003DB6B2 /* AppConstants.swift in Sources */,
+				4BE5EB951FA95792003DB6B2 /* AudioRecordManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B66D93D1FA881A800B861A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B66D9461FA881A800B861A3 /* VoicyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B66D9481FA881A800B861A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B66D9511FA881A800B861A3 /* VoicyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B66D9431FA881A800B861A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B66D92C1FA881A800B861A3 /* Voicy */;
+			targetProxy = 4B66D9421FA881A800B861A3 /* PBXContainerItemProxy */;
+		};
+		4B66D94E1FA881A800B861A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B66D92C1FA881A800B861A3 /* Voicy */;
+			targetProxy = 4B66D94D1FA881A800B861A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B66D9341FA881A800B861A3 /* Top.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B66D9351FA881A800B861A3 /* Base */,
+			);
+			name = Top.storyboard;
+			sourceTree = "<group>";
+		};
+		4B66D9391FA881A800B861A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B66D93A1FA881A800B861A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B66D9531FA881A800B861A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B66D9541FA881A800B861A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B66D9561FA881A800B861A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2524F3ACC1877B77B4AA96E0 /* Pods-Voicy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85LK9Y74SK;
+				INFOPLIST_FILE = Voicy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaka.Voicy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voicy/Voicy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B66D9571FA881A800B861A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272BEAA2BA3AFF88331077C5 /* Pods-Voicy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85LK9Y74SK;
+				INFOPLIST_FILE = Voicy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaka.Voicy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voicy/Voicy-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B66D9591FA881A800B861A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85LK9Y74SK;
+				INFOPLIST_FILE = VoicyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaka.VoicyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voicy.app/Voicy";
+			};
+			name = Debug;
+		};
+		4B66D95A1FA881A800B861A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85LK9Y74SK;
+				INFOPLIST_FILE = VoicyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaka.VoicyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voicy.app/Voicy";
+			};
+			name = Release;
+		};
+		4B66D95C1FA881A800B861A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85LK9Y74SK;
+				INFOPLIST_FILE = VoicyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaka.VoicyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Voicy;
+			};
+			name = Debug;
+		};
+		4B66D95D1FA881A800B861A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85LK9Y74SK;
+				INFOPLIST_FILE = VoicyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kaka.VoicyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Voicy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B66D9281FA881A800B861A3 /* Build configuration list for PBXProject "Voicy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B66D9531FA881A800B861A3 /* Debug */,
+				4B66D9541FA881A800B861A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B66D9551FA881A800B861A3 /* Build configuration list for PBXNativeTarget "Voicy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B66D9561FA881A800B861A3 /* Debug */,
+				4B66D9571FA881A800B861A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B66D9581FA881A800B861A3 /* Build configuration list for PBXNativeTarget "VoicyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B66D9591FA881A800B861A3 /* Debug */,
+				4B66D95A1FA881A800B861A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B66D95B1FA881A800B861A3 /* Build configuration list for PBXNativeTarget "VoicyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B66D95C1FA881A800B861A3 /* Debug */,
+				4B66D95D1FA881A800B861A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B66D9251FA881A800B861A3 /* Project object */;
+}

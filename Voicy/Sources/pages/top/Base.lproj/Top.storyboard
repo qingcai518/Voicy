@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TopController" customModule="Voicy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRV-8e-wDC">
+                                <rect key="frame" x="24" y="593" width="327" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SbD-Dv-uer"/>
+                                </constraints>
+                                <state key="normal" title="按住说话"/>
+                                <connections>
+                                    <action selector="endRecording" destination="BYZ-38-t0r" eventType="touchUpInside" id="tIo-2c-QfU"/>
+                                    <action selector="startRecording" destination="BYZ-38-t0r" eventType="touchDown" id="xc8-mj-1l7"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gny-lU-GKW">
+                                <rect key="frame" x="87" y="213" width="200" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olx-GP-O5e">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Bql-ya-txd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icon_microphoneL" translatesAutoresizingMaskIntoConstraints="NO" id="xHV-qe-rpC">
+                                        <rect key="frame" x="24" y="95" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="F6i-Yv-Aut"/>
+                                            <constraint firstAttribute="width" constant="50" id="yUg-tl-2cc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_wave1" translatesAutoresizingMaskIntoConstraints="NO" id="mYX-nz-kwp">
+                                        <rect key="frame" x="126" y="95" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="A2c-Ao-pgH"/>
+                                            <constraint firstAttribute="width" constant="50" id="ybC-8s-Q3A"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="9Pz-db-JuJ"/>
+                                    <constraint firstItem="xHV-qe-rpC" firstAttribute="leading" secondItem="Gny-lU-GKW" secondAttribute="leading" constant="24" id="A2V-Zc-Zx1"/>
+                                    <constraint firstItem="mYX-nz-kwp" firstAttribute="centerY" secondItem="Gny-lU-GKW" secondAttribute="centerY" id="A6P-Bw-Ok1"/>
+                                    <constraint firstItem="xHV-qe-rpC" firstAttribute="centerY" secondItem="Gny-lU-GKW" secondAttribute="centerY" id="FIe-d7-Eyb"/>
+                                    <constraint firstItem="Olx-GP-O5e" firstAttribute="top" secondItem="Gny-lU-GKW" secondAttribute="top" id="LRV-Ul-8qK"/>
+                                    <constraint firstAttribute="trailing" secondItem="mYX-nz-kwp" secondAttribute="trailing" constant="24" id="RmK-f1-WbN"/>
+                                    <constraint firstAttribute="width" constant="200" id="Uhn-AA-866"/>
+                                    <constraint firstItem="Olx-GP-O5e" firstAttribute="leading" secondItem="Gny-lU-GKW" secondAttribute="leading" id="eX4-jO-ZXI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Olx-GP-O5e" secondAttribute="trailing" id="kQb-Gb-NGR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WRV-8e-wDC" secondAttribute="bottom" constant="24" id="Ijy-EO-LNf"/>
+                            <constraint firstItem="Gny-lU-GKW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O3M-MW-gEn"/>
+                            <constraint firstItem="WRV-8e-wDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="r30-tk-t2f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRV-8e-wDC" secondAttribute="trailing" constant="24" id="wGg-P4-ZZj"/>
+                            <constraint firstItem="Gny-lU-GKW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wRw-u0-ijc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="Gny-lU-GKW" id="bbd-Pl-AYn"/>
+                        <outlet property="recordBtn" destination="WRV-8e-wDC" id="v0Q-WR-XsL"/>
+                        <outlet property="timerLbl" destination="Olx-GP-O5e" id="Qoc-Oz-tHH"/>
+                        <outlet property="waveView" destination="mYX-nz-kwp" id="0rh-L9-oAp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_microphoneL" width="50" height="50"/>
+        <image name="icon_wave1" width="25" height="25"/>
+    </resources>
+</document>
