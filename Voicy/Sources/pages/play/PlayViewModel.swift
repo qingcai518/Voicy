@@ -17,12 +17,8 @@ class PlayViewModel {
         let info3 = PlayInfo(type: .man, image: UIImage(named: "icon_woman")!)
         let info4 = PlayInfo(type: .loli, image: UIImage(named: "icon_woman")!)
         let info5 = PlayInfo(type: .papi, image: UIImage(named: "icon_woman")!)
-        let info6 = PlayInfo(type: .original, image: UIImage(named: "icon_woman")!)
-        let info7 = PlayInfo(type: .original, image: UIImage(named: "icon_woman")!)
-        let info8 = PlayInfo(type: .original, image: UIImage(named: "icon_woman")!)
-        let info9 = PlayInfo(type: .original, image: UIImage(named: "icon_woman")!)
-        let info10 = PlayInfo(type: .original, image: UIImage(named: "icon_woman")!)
+        let info6 = PlayInfo(type: .custom, image: UIImage(named: "icon_woman")!)
         
-        playInfos = [info1, info2, info3, info4, info5, info6, info7, info8, info9, info10]
+        playInfos = [info1, info2, info3, info4, info5, info6]
     }
 }

@@ -23,6 +23,8 @@ extension PlayController : UICollectionViewDelegate {
         titleLbl.text = currentInfo.type.rawValue
         currentType = currentInfo.type
         playVoice()
+        
+        customView.isHidden = currentType != .custom
     }
 }
 

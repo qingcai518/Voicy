@@ -15,6 +15,10 @@ class PlayController: VoicyViewController {
     @IBOutlet weak var animationView: UIImageView!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var typeImageView: UIImageView!
+    @IBOutlet weak var customView: UIView!
+    @IBOutlet weak var rateSlider: UISlider!
+    @IBOutlet weak var pitchSlider: UISlider!
+    @IBOutlet weak var overlapSlider: UISlider!
     
     let viewModel = PlayViewModel()
     let manager = AudioPlayManager()
@@ -29,6 +33,7 @@ class PlayController: VoicyViewController {
         
         manager.delegate = self
         setView()
+        setupCustomView()
         setupCollectionView()
         getData()
     }
@@ -66,6 +71,22 @@ extension PlayController {
         playBtn.rx.tap.asObservable().bind { [weak self] in
             self?.playVoice()
         }.disposed(by: disposeBag)
+    }
+    
+    fileprivate func setupCustomView() {
+        customView.isHidden = true
+        
+        rateSlider.minimumValue = 1 / 32
+        rateSlider.maximumValue = 32
+        rateSlider.value = 1
+        
+        pitchSlider.minimumValue = -2400
+        pitchSlider.maximumValue = 2400
+        pitchSlider.value = 1
+        
+        overlapSlider.minimumValue = 3
+        overlapSlider.maximumValue = 32
+        overlapSlider.value = 8
     }
     
     fileprivate func setupCollectionView() {

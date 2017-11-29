@@ -17,4 +17,5 @@ enum VoiceType: String {
     case woman = "女声"
     case loli = "萝莉"
     case papi = "Papi酱"
+    case custom = "自定义"
 }
