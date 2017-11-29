@@ -15,6 +15,7 @@ protocol AudioPlayManagerDelegate {
 class AudioPlayManager: NSObject {
     var engine: AVAudioEngine?
     var audioPlayerNode: AVAudioPlayerNode?
+    var audioUnitTimePitch: AVAudioUnitTimePitch?
     var delegate: AudioPlayManagerDelegate?
     
     override init() {
@@ -36,7 +37,8 @@ class AudioPlayManager: NSObject {
         let effect = getEffect(with: voiceType)
         
         // Prepare AVAudioUnitTimePitch
-        let audioUnitTimePitch = AVAudioUnitTimePitch()
+        audioUnitTimePitch = AVAudioUnitTimePitch()
+        guard let audioUnitTimePitch = audioUnitTimePitch else {return}
         
         print("before pitch = \(audioUnitTimePitch.pitch), rate = \(audioUnitTimePitch.rate), overlap = \(audioUnitTimePitch.overlap)")
         
@@ -68,11 +70,11 @@ class AudioPlayManager: NSObject {
         case .woman:
             return (pitch: 500, rate: 1)
         case .papi:
-            return (pitch: 1000, rate: 1.5)
+            return (pitch: 800, rate: 1)
         case .loli:
             return (pitch: 1, rate: 1)
         default:
-            return (pitch: 0, rate: 1)
+            return (pitch: 1, rate: 1)
         }
     }
 }

@@ -106,4 +106,16 @@ extension PlayController {
         self.dismiss(animated: true, completion: nil)
         stopPlay()
     }
+    
+    @IBAction func changeRate(sender: UISlider) {
+        manager.audioUnitTimePitch?.rate = sender.value
+    }
+    
+    @IBAction func changePitch(sender: UISlider) {
+        manager.audioUnitTimePitch?.pitch = sender.value
+    }
+    
+    @IBAction func changeOverlap(sender: UISlider) {
+        manager.audioUnitTimePitch?.overlap = sender.value
+    }
 }

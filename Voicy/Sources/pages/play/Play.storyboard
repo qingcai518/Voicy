@@ -148,6 +148,9 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="E3Q-Ct-AY7">
                                         <rect key="frame" x="74" y="0.0" width="287" height="31"/>
+                                        <connections>
+                                            <action selector="changeRateWithSender:" destination="rvc-Fg-09K" eventType="valueChanged" id="J4E-px-F1d"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBc-YP-bfm">
                                         <rect key="frame" x="16" y="0.0" width="48" height="29"/>
@@ -161,6 +164,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XQM-7T-qPN">
                                         <rect key="frame" x="74" y="38" width="287" height="31"/>
+                                        <connections>
+                                            <action selector="changePitchWithSender:" destination="rvc-Fg-09K" eventType="valueChanged" id="iAh-3S-4MO"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pitch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXu-hY-J3y">
                                         <rect key="frame" x="16" y="37" width="48" height="29"/>
@@ -174,6 +180,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="uSH-gS-3gQ">
                                         <rect key="frame" x="74" y="76" width="287" height="31"/>
+                                        <connections>
+                                            <action selector="changeOverlapWithSender:" destination="rvc-Fg-09K" eventType="valueChanged" id="XsD-LN-cN3"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="overlap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-oX-Wg5">
                                         <rect key="frame" x="16" y="74" width="48" height="29"/>
