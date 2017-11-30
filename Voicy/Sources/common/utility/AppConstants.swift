@@ -19,3 +19,7 @@ enum VoiceType: String {
     case papi = "Papi酱"
     case custom = "自定义"
 }
+
+var customRate:Float = 1
+var customPitch:Float = 1
+var customOverlap:Float = 8

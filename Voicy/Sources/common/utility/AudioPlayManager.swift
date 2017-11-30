@@ -42,7 +42,7 @@ class AudioPlayManager: NSObject {
         
         print("before pitch = \(audioUnitTimePitch.pitch), rate = \(audioUnitTimePitch.rate), overlap = \(audioUnitTimePitch.overlap)")
         
-        audioUnitTimePitch.overlap = 8.0
+        audioUnitTimePitch.overlap = effect.overlap
         audioUnitTimePitch.pitch = effect.pitch
         audioUnitTimePitch.rate = effect.rate
         engine.attach(audioUnitTimePitch)
@@ -63,18 +63,18 @@ class AudioPlayManager: NSObject {
         audioPlayerNode.play()
     }
     
-    private func getEffect(with voiceType: VoiceType) -> (pitch:Float, rate:Float) {
+    private func getEffect(with voiceType: VoiceType) -> (pitch:Float, rate:Float, overlap: Float) {
         switch voiceType {
         case .man:
-            return (pitch: 1, rate: 1)
+            return (pitch: 1, rate: 1, overlap: 8)
         case .woman:
-            return (pitch: 500, rate: 1)
+            return (pitch: 500, rate: 1, overlap: 8)
         case .papi:
-            return (pitch: 800, rate: 1)
+            return (pitch: 800, rate: 1, overlap: 8)
         case .loli:
-            return (pitch: 1, rate: 1)
+            return (pitch: 1, rate: 1, overlap: 8)
         default:
-            return (pitch: 1, rate: 1)
+            return (pitch: customPitch, rate: customRate, overlap: customOverlap)
         }
     }
 }

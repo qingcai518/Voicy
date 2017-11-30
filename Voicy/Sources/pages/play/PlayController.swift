@@ -19,6 +19,9 @@ class PlayController: VoicyViewController {
     @IBOutlet weak var rateSlider: UISlider!
     @IBOutlet weak var pitchSlider: UISlider!
     @IBOutlet weak var overlapSlider: UISlider!
+    @IBOutlet weak var rateLbl: UILabel!
+    @IBOutlet weak var pitchLbl: UILabel!
+    @IBOutlet weak var overlapLbl: UILabel!
     
     let viewModel = PlayViewModel()
     let manager = AudioPlayManager()
@@ -76,17 +79,20 @@ extension PlayController {
     fileprivate func setupCustomView() {
         customView.isHidden = true
         
-        rateSlider.minimumValue = 1 / 32
-        rateSlider.maximumValue = 32
-        rateSlider.value = 1
+        rateSlider.minimumValue = 0.5
+        rateSlider.maximumValue = 3
+        rateSlider.value = customRate
+        rateLbl.text = "\(customRate)"
         
-        pitchSlider.minimumValue = -2400
-        pitchSlider.maximumValue = 2400
-        pitchSlider.value = 1
+        pitchSlider.minimumValue = -1000
+        pitchSlider.maximumValue = 1000
+        pitchSlider.value = customPitch
+        pitchLbl.text = "\(customPitch)"
         
         overlapSlider.minimumValue = 3
         overlapSlider.maximumValue = 32
-        overlapSlider.value = 8
+        overlapSlider.value = customOverlap
+        overlapLbl.text = "\(customOverlap)"
     }
     
     fileprivate func setupCollectionView() {
@@ -108,14 +114,20 @@ extension PlayController {
     }
     
     @IBAction func changeRate(sender: UISlider) {
-        manager.audioUnitTimePitch?.rate = sender.value
+        customRate = sender.value
+        manager.audioUnitTimePitch?.rate = customRate
+        rateLbl.text = "\(customRate)"
     }
     
     @IBAction func changePitch(sender: UISlider) {
-        manager.audioUnitTimePitch?.pitch = sender.value
+        customPitch = sender.value
+        manager.audioUnitTimePitch?.pitch = customPitch
+        pitchLbl.text = "\(customPitch)"
     }
     
     @IBAction func changeOverlap(sender: UISlider) {
-        manager.audioUnitTimePitch?.overlap = sender.value
+        customOverlap = sender.value
+        manager.audioUnitTimePitch?.overlap = customOverlap
+        overlapLbl.text = "\(customOverlap)"
     }
 }
