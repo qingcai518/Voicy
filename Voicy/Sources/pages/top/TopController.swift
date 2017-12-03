@@ -82,4 +82,10 @@ extension TopController {
     @IBAction func endRecording() {
          manager.endRecord()
     }
+    
+    @IBAction func tel() {
+        UIApplication.shared.open(URL(string: "telprompt://08046189518")!, options: [:]) { flag in
+            print("result = \(flag)")
+        }
+    }
 }

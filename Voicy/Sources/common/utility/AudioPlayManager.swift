@@ -65,12 +65,14 @@ class AudioPlayManager: NSObject {
     
     private func getEffect(with voiceType: VoiceType) -> (pitch:Float, rate:Float, overlap: Float) {
         switch voiceType {
-        case .man:
+        case .original:
             return (pitch: 1, rate: 1, overlap: 8)
+        case .man:
+            return (pitch: -500, rate: 1, overlap: 8)
         case .woman:
             return (pitch: 500, rate: 1, overlap: 8)
         case .papi:
-            return (pitch: 800, rate: 1, overlap: 8)
+            return (pitch: 800, rate: 1.2, overlap: 8)
         case .loli:
             return (pitch: 1, rate: 1, overlap: 8)
         default:
