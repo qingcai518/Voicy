@@ -23,7 +23,6 @@ class RecordModel {
 
             let duration:Double = 25.6
             
-            
             let recordInfo = RecordInfo(time: creationDate, size: size, duration: duration)
             recordInfos.append(recordInfo)
         }

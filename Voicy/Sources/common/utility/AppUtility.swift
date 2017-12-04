@@ -26,7 +26,7 @@ func getFormatFileSize(with size: Int) -> String {
     let sizeK = Double(size) / 1024
     let sizeM = Double(size) / (1024 * 1024)
     
-    if sizeM > 0 {
+    if sizeM >= 1 {
         return "".appendingFormat("%.2fm", sizeM)
     }
     

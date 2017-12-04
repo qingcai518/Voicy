@@ -14,6 +14,6 @@ class RecordCell: UITableViewCell {
     
     func configure(with recordInfo: RecordInfo) {
         timeLbl.text = recordInfo.time
-        sizeAndDurationLbl.text = recordInfo.duration
+        sizeAndDurationLbl.text = "大小:\(recordInfo.size)  时长:\(recordInfo.duration)"
     }
 }
