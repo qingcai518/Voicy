@@ -11,7 +11,7 @@ import UIKit
 class RecordController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var closeBtn: UIButton!
-    let viewModel = VoicyModel()
+    let viewModel = RecordModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
