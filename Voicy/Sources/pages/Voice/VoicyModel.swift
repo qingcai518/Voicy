@@ -13,19 +13,19 @@ class VoicyModel {
     
     func getRecordInfos() {
         guard let dirPath = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first?.path else {return}
-        
-        print("directory = \(dirPath)")
-        
         guard let files = try? FileManager.default.contentsOfDirectory(atPath: dirPath) else {return}
-        
-        print("files = \(files)")
-        
         let recordFiles = files.filter{$0.hasSuffix(audioBaseFileName)}.map{"\(dirPath)/\($0)"}.filter{FileManager.default.fileExists(atPath: $0)}
-        
+
         for recordFile in recordFiles {
             guard let attrs = try? FileManager.default.attributesOfItem(atPath: recordFile) else {continue}
-            guard let creationDate = attrs[FileAttributeKey.creationDate] as? String else {continue}
-            guard let size = attrs[FileAttributeKey.size] as? Double else {continue}
+            guard let creationDate = attrs[FileAttributeKey.creationDate] as? String else {
+                print("11111")
+                continue
+            }
+            guard let size = attrs[FileAttributeKey.size] as? Double else {
+                print("2222")
+                continue
+            }
             
             print(creationDate + ", \(size)")
         }
