@@ -82,17 +82,17 @@ extension PlayController {
         rateSlider.minimumValue = 0.5
         rateSlider.maximumValue = 3
         rateSlider.value = customRate
-        rateLbl.text = "\(customRate)"
+        rateLbl.text = "".appendingFormat("%.2f", customRate)
         
         pitchSlider.minimumValue = -1000
         pitchSlider.maximumValue = 1000
         pitchSlider.value = customPitch
-        pitchLbl.text = "\(customPitch)"
+        pitchLbl.text = "".appendingFormat("%.2f", customPitch)
         
         overlapSlider.minimumValue = 3
         overlapSlider.maximumValue = 32
         overlapSlider.value = customOverlap
-        overlapLbl.text = "\(customOverlap)"
+        overlapLbl.text = "".appendingFormat("%.2f", customOverlap)
     }
     
     fileprivate func setupCollectionView() {

@@ -17,6 +17,12 @@
 		4B1A829A1FA991660016C14F /* VoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82991FA991660016C14F /* VoiceCell.swift */; };
 		4B1A829C1FA9A51F0016C14F /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A829B1FA9A51F0016C14F /* AppUtility.swift */; };
 		4B1A829F1FA9A6910016C14F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A829E1FA9A6910016C14F /* UIColor.swift */; };
+		4B3EF44D1FD4CDB60038A96F /* Voicy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3EF44C1FD4CDB60038A96F /* Voicy.storyboard */; };
+		4B3EF44F1FD4D6160038A96F /* VoicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF44E1FD4D6160038A96F /* VoicyController.swift */; };
+		4B3EF4511FD4D6D10038A96F /* VoicyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4501FD4D6D10038A96F /* VoicyExtension.swift */; };
+		4B3EF4551FD4DD390038A96F /* VoicyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4541FD4DD390038A96F /* VoicyCell.swift */; };
+		4B3EF4581FD4DE140038A96F /* RecordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4571FD4DE140038A96F /* RecordInfo.swift */; };
+		4B3EF45A1FD4E2320038A96F /* VoicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4591FD4E2320038A96F /* VoicyModel.swift */; };
 		4B5DB6F51FAA18990058C8AC /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */; };
 		4B66D9311FA881A800B861A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9301FA881A800B861A3 /* AppDelegate.swift */; };
 		4B66D9331FA881A800B861A3 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9321FA881A800B861A3 /* TopController.swift */; };
@@ -29,7 +35,6 @@
 		4BE5EB901FA95677003DB6B2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB8F1FA95677003DB6B2 /* AppConstants.swift */; };
 		4BE5EB931FA956E8003DB6B2 /* VoicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB921FA956E8003DB6B2 /* VoicyViewController.swift */; };
 		4BE5EB951FA95792003DB6B2 /* AudioRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB941FA95792003DB6B2 /* AudioRecordManager.swift */; };
-		4BE5EB9D1FA95B30003DB6B2 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5EB9C1FA95B30003DB6B2 /* WaveView.m */; };
 		8A4A434AAA597FD956A6677C /* Pods_Voicy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964FB6D1EE713FCC0EEC2522 /* Pods_Voicy.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,12 @@
 		4B1A82991FA991660016C14F /* VoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCell.swift; sourceTree = "<group>"; };
 		4B1A829B1FA9A51F0016C14F /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		4B1A829E1FA9A6910016C14F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4B3EF44C1FD4CDB60038A96F /* Voicy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voicy.storyboard; sourceTree = "<group>"; };
+		4B3EF44E1FD4D6160038A96F /* VoicyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyController.swift; sourceTree = "<group>"; };
+		4B3EF4501FD4D6D10038A96F /* VoicyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyExtension.swift; sourceTree = "<group>"; };
+		4B3EF4541FD4DD390038A96F /* VoicyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyCell.swift; sourceTree = "<group>"; };
+		4B3EF4571FD4DE140038A96F /* RecordInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInfo.swift; sourceTree = "<group>"; };
+		4B3EF4591FD4E2320038A96F /* VoicyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyModel.swift; sourceTree = "<group>"; };
 		4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
 		4B66D92D1FA881A800B861A3 /* Voicy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voicy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B66D9301FA881A800B861A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +93,6 @@
 		4BE5EB921FA956E8003DB6B2 /* VoicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyViewController.swift; sourceTree = "<group>"; };
 		4BE5EB941FA95792003DB6B2 /* AudioRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordManager.swift; sourceTree = "<group>"; };
 		4BE5EB971FA95AFF003DB6B2 /* Voicy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voicy-Bridging-Header.h"; sourceTree = "<group>"; };
-		4BE5EB9B1FA95B30003DB6B2 /* WaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
-		4BE5EB9C1FA95B30003DB6B2 /* WaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 		964FB6D1EE713FCC0EEC2522 /* Pods_Voicy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voicy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +158,22 @@
 				4B1A829E1FA9A6910016C14F /* UIColor.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		4B3EF4531FD4DD220038A96F /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				4B3EF4541FD4DD390038A96F /* VoicyCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		4B3EF4561FD4DE070038A96F /* info */ = {
+			isa = PBXGroup;
+			children = (
+				4B3EF4571FD4DE140038A96F /* RecordInfo.swift */,
+			);
+			path = info;
 			sourceTree = "<group>";
 		};
 		4B66D9241FA881A800B861A3 = {
@@ -219,6 +244,7 @@
 			children = (
 				4B66D9601FA8895800B861A3 /* top */,
 				4B1A828D1FA986A90016C14F /* play */,
+				4B85D73E1FD3E71C008C4CE1 /* Voice */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -226,7 +252,6 @@
 		4B66D9601FA8895800B861A3 /* top */ = {
 			isa = PBXGroup;
 			children = (
-				4BE5EB961FA95AE3003DB6B2 /* parts */,
 				4B66D9341FA881A800B861A3 /* Top.storyboard */,
 				4B66D9321FA881A800B861A3 /* TopController.swift */,
 				4B08D5F01FA9BAA70064DB71 /* TopExtension.swift */,
@@ -235,9 +260,22 @@
 			path = top;
 			sourceTree = "<group>";
 		};
+		4B85D73E1FD3E71C008C4CE1 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				4B3EF4531FD4DD220038A96F /* cell */,
+				4B3EF44C1FD4CDB60038A96F /* Voicy.storyboard */,
+				4B3EF44E1FD4D6160038A96F /* VoicyController.swift */,
+				4B3EF4501FD4D6D10038A96F /* VoicyExtension.swift */,
+				4B3EF4591FD4E2320038A96F /* VoicyModel.swift */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
 		4BE5EB8D1FA95662003DB6B2 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				4B3EF4561FD4DE070038A96F /* info */,
 				4B1A829D1FA9A6880016C14F /* extension */,
 				4BE5EB911FA956CA003DB6B2 /* utility */,
 				4BE5EB8E1FA9566B003DB6B2 /* ui */,
@@ -262,15 +300,6 @@
 				4B1A829B1FA9A51F0016C14F /* AppUtility.swift */,
 			);
 			path = utility;
-			sourceTree = "<group>";
-		};
-		4BE5EB961FA95AE3003DB6B2 /* parts */ = {
-			isa = PBXGroup;
-			children = (
-				4BE5EB9B1FA95B30003DB6B2 /* WaveView.h */,
-				4BE5EB9C1FA95B30003DB6B2 /* WaveView.m */,
-			);
-			path = parts;
 			sourceTree = "<group>";
 		};
 		C16FA089F7F7C3892C8E9E13 /* Frameworks */ = {
@@ -395,6 +424,7 @@
 				4B1A828F1FA986F60016C14F /* Play.storyboard in Resources */,
 				4B66D93B1FA881A800B861A3 /* LaunchScreen.storyboard in Resources */,
 				4B66D9381FA881A800B861A3 /* Assets.xcassets in Resources */,
+				4B3EF44D1FD4CDB60038A96F /* Voicy.storyboard in Resources */,
 				4B66D9361FA881A800B861A3 /* Top.storyboard in Resources */,
 				4B05C3891FCAC6E9008FE804 /* sample.mp3 in Resources */,
 			);
@@ -495,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3EF4581FD4DE140038A96F /* RecordInfo.swift in Sources */,
 				4B1A829A1FA991660016C14F /* VoiceCell.swift in Sources */,
 				4B1A829F1FA9A6910016C14F /* UIColor.swift in Sources */,
 				4BE5EB931FA956E8003DB6B2 /* VoicyViewController.swift in Sources */,
@@ -504,12 +535,15 @@
 				4B08D5F11FA9BAA70064DB71 /* TopExtension.swift in Sources */,
 				4B1A82951FA98D8A0016C14F /* PlayViewModel.swift in Sources */,
 				4B1A82931FA98D4F0016C14F /* PlayExtension.swift in Sources */,
-				4BE5EB9D1FA95B30003DB6B2 /* WaveView.m in Sources */,
+				4B3EF45A1FD4E2320038A96F /* VoicyModel.swift in Sources */,
 				4B66D9331FA881A800B861A3 /* TopController.swift in Sources */,
 				4BE5EB8C1FA95478003DB6B2 /* TopViewModel.swift in Sources */,
 				4B1A829C1FA9A51F0016C14F /* AppUtility.swift in Sources */,
 				4B66D9311FA881A800B861A3 /* AppDelegate.swift in Sources */,
 				4BE5EB901FA95677003DB6B2 /* AppConstants.swift in Sources */,
+				4B3EF4551FD4DD390038A96F /* VoicyCell.swift in Sources */,
+				4B3EF44F1FD4D6160038A96F /* VoicyController.swift in Sources */,
+				4B3EF4511FD4D6D10038A96F /* VoicyExtension.swift in Sources */,
 				4BE5EB951FA95792003DB6B2 /* AudioRecordManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

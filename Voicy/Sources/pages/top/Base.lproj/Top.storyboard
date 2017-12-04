@@ -37,6 +37,25 @@
                                     <action selector="startRecording" destination="BYZ-38-t0r" eventType="touchDown" id="xc8-mj-1l7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeL-0n-YSB">
+                                <rect key="frame" x="24" y="527" width="327" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.63637565689999998" blue="0.33983455140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wM4-wk-9Ll"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="拨打电话">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tel" destination="BYZ-38-t0r" eventType="touchUpInside" id="VR9-5O-gUh"/>
+                                </connections>
+                            </button>
                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gny-lU-GKW">
                                 <rect key="frame" x="87" y="213" width="200" height="240"/>
                                 <subviews>
@@ -83,14 +102,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeL-0n-YSB">
-                                <rect key="frame" x="24" y="527" width="327" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh8-RI-9hA">
+                                <rect key="frame" x="24" y="461" width="327" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.63637565689999998" blue="0.33983455140000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="wM4-wk-9Ll"/>
+                                    <constraint firstAttribute="height" constant="50" id="QOO-aQ-psG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="拨打电话">
+                                <state key="normal" title="我的录音">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -99,7 +118,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="tel" destination="BYZ-38-t0r" eventType="touchUpInside" id="VR9-5O-gUh"/>
+                                    <action selector="openRecords" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7k-36-UyD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,8 +126,11 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WRV-8e-wDC" secondAttribute="bottom" constant="24" id="Ijy-EO-LNf"/>
                             <constraint firstItem="Gny-lU-GKW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O3M-MW-gEn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vh8-RI-9hA" secondAttribute="trailing" constant="24" id="RI9-hy-WGv"/>
                             <constraint firstItem="FeL-0n-YSB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="U13-C4-F91"/>
                             <constraint firstItem="WRV-8e-wDC" firstAttribute="top" secondItem="FeL-0n-YSB" secondAttribute="bottom" constant="16" id="XHL-oa-Fap"/>
+                            <constraint firstItem="FeL-0n-YSB" firstAttribute="top" secondItem="Vh8-RI-9hA" secondAttribute="bottom" constant="16" id="XjM-Z5-Obo"/>
+                            <constraint firstItem="Vh8-RI-9hA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="cFt-WM-Bp5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FeL-0n-YSB" secondAttribute="trailing" constant="24" id="iOV-SM-gjd"/>
                             <constraint firstItem="WRV-8e-wDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="r30-tk-t2f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WRV-8e-wDC" secondAttribute="trailing" constant="24" id="wGg-P4-ZZj"/>

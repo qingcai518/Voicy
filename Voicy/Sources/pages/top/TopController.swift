@@ -88,4 +88,9 @@ extension TopController {
             print("result = \(flag)")
         }
     }
+    
+    @IBAction func openRecords() {
+        guard let next = UIStoryboard(name: "Voicy", bundle: nil).instantiateInitialViewController() else {return}
+        present(next, animated: true, completion: nil)
+    }
 }
