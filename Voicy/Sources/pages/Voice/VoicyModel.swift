@@ -19,15 +19,13 @@ class VoicyModel {
         for recordFile in recordFiles {
             guard let attrs = try? FileManager.default.attributesOfItem(atPath: recordFile) else {continue}
             guard let creationDate = attrs[FileAttributeKey.creationDate] as? String else {
-                print("11111")
-                continue
-            }
-            guard let size = attrs[FileAttributeKey.size] as? Double else {
-                print("2222")
                 continue
             }
             
-            print(creationDate + ", \(size)")
+            let duration = "1s"
+            
+            let recordInfo = RecordInfo(id: UUID().uuidString, time: creationDate, duration: duration)
+            recordInfos.append(recordInfo)
         }
     }
 }
