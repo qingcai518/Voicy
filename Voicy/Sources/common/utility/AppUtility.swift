@@ -21,3 +21,14 @@ func createImage(with color: UIColor, _ scale: Double) -> UIImage? {
     UIGraphicsEndImageContext()
     return image
 }
+
+func getFormatFileSize(with size: Int) -> String {
+    let sizeK = Double(size) / 1024
+    let sizeM = Double(size) / (1024 * 1024)
+    
+    if sizeM > 0 {
+        return "".appendingFormat("%.2fm", sizeM)
+    }
+    
+    return "".appendingFormat("%.2fk", sizeK)
+}

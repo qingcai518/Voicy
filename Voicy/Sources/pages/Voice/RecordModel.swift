@@ -20,11 +20,11 @@ class RecordModel {
             guard let attrs = try? FileManager.default.attributesOfItem(atPath: recordFile) else {continue}
             guard let creationDate = attrs[.creationDate] as? Date else {return}
             guard let size = attrs[.size] as? Int else {return}
+
+            let duration:Double = 25.6
             
-            let dateStr = getStr(from: creationDate)
-            let duration = "2s"
             
-            let recordInfo = RecordInfo(id: UUID().uuidString, time: dateStr, duration: duration)
+            let recordInfo = RecordInfo(time: creationDate, size: size, duration: duration)
             recordInfos.append(recordInfo)
         }
     }

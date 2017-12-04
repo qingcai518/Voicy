@@ -10,10 +10,10 @@ import UIKit
 
 class RecordCell: UITableViewCell {
     @IBOutlet weak var timeLbl: UILabel!
-    @IBOutlet weak var durationLbl: UILabel!
+    @IBOutlet weak var sizeAndDurationLbl: UILabel!
     
     func configure(with recordInfo: RecordInfo) {
         timeLbl.text = recordInfo.time
-        durationLbl.text = recordInfo.duration
+        sizeAndDurationLbl.text = recordInfo.duration
     }
 }

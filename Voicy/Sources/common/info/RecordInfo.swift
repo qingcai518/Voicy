@@ -11,5 +11,13 @@ import Foundation
 struct RecordInfo {
     var id: String
     var time: String
+    var size: String
     var duration: String
+    
+    init(time: Date, size: Int, duration: Double) {
+        self.id = UUID().uuidString
+        self.time = getStr(from: time)
+        self.size = getFormatFileSize(with: size)
+        self.duration = "\(duration)s"
+    }
 }
