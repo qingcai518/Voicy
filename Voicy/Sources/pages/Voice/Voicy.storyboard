@@ -67,7 +67,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3EZ-Qw-6zV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ANK-Uy-xvg">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="qYl-la-Wxi">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nrm-mT-2u0">
+                                <rect key="frame" x="313" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="閉じる">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doClose" destination="2EW-03-zbK" eventType="touchUpInside" id="pqg-gx-d5l"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="closeBtn" destination="nrm-mT-2u0" id="wfs-HD-2sD"/>
                         <outlet property="tableView" destination="gQo-ia-Gfj" id="Lqu-Fj-qtx"/>
                     </connections>
                 </viewController>

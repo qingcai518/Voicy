@@ -10,6 +10,7 @@ import UIKit
 
 class VoicyController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var closeBtn: UIButton!
     let viewModel = VoicyModel()
 
     override func viewDidLoad() {
@@ -33,5 +34,11 @@ extension VoicyController {
     fileprivate func getData() {
         viewModel.getRecordInfos()
         tableView.reloadData()
+    }
+}
+
+extension VoicyController {
+    @IBAction func doClose() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

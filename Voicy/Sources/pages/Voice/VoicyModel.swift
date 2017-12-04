@@ -13,7 +13,13 @@ class VoicyModel {
     
     func getRecordInfos() {
         guard let dirPath = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first?.path else {return}
+        
+        print("directory = \(dirPath)")
+        
         guard let files = try? FileManager.default.contentsOfDirectory(atPath: dirPath) else {return}
+        
+        print("files = \(files)")
+        
         let recordFiles = files.filter{$0.hasSuffix(audioBaseFileName)}.map{"\(dirPath)/\($0)"}.filter{FileManager.default.fileExists(atPath: $0)}
         
         for recordFile in recordFiles {

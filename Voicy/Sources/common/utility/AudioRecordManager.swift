@@ -34,6 +34,9 @@ class AudioRecordManager: NSObject {
         endRecord()
         
         guard let fileUrl = getFileURL(with: fileName) else {return nil}
+        
+        print("file url = \(fileUrl.absoluteString)")
+        
         do {
             audioRecorder = try AVAudioRecorder(url: fileUrl, settings: recordSetting)
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord)
