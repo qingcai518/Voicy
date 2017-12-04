@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VoicyController: UIViewController {
+class RecordController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var closeBtn: UIButton!
     let viewModel = VoicyModel()
@@ -25,7 +25,7 @@ class VoicyController: UIViewController {
     }
 }
 
-extension VoicyController {
+extension RecordController {
     fileprivate func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -37,7 +37,7 @@ extension VoicyController {
     }
 }
 
-extension VoicyController {
+extension RecordController {
     @IBAction func doClose() {
         self.dismiss(animated: true, completion: nil)
     }

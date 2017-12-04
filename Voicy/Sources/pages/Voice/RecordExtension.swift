@@ -8,11 +8,13 @@
 
 import UIKit
 
-extension VoicyController: UITableViewDelegate {
-    
+extension RecordController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 
+    }
 }
 
-extension VoicyController: UITableViewDataSource {
+extension RecordController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -22,11 +24,11 @@ extension VoicyController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "VoicyCell", for: indexPath)
+        return tableView.dequeueReusableCell(withIdentifier: "RecordCell", for: indexPath)
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let cell = cell as? VoicyCell {
+        if let cell = cell as? RecordCell {
             let info = viewModel.recordInfos[indexPath.row]
             cell.configure(with: info)
         }

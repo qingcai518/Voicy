@@ -17,12 +17,13 @@
 		4B1A829A1FA991660016C14F /* VoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A82991FA991660016C14F /* VoiceCell.swift */; };
 		4B1A829C1FA9A51F0016C14F /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A829B1FA9A51F0016C14F /* AppUtility.swift */; };
 		4B1A829F1FA9A6910016C14F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A829E1FA9A6910016C14F /* UIColor.swift */; };
-		4B3EF44D1FD4CDB60038A96F /* Voicy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3EF44C1FD4CDB60038A96F /* Voicy.storyboard */; };
-		4B3EF44F1FD4D6160038A96F /* VoicyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF44E1FD4D6160038A96F /* VoicyController.swift */; };
-		4B3EF4511FD4D6D10038A96F /* VoicyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4501FD4D6D10038A96F /* VoicyExtension.swift */; };
-		4B3EF4551FD4DD390038A96F /* VoicyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4541FD4DD390038A96F /* VoicyCell.swift */; };
+		4B3EF44D1FD4CDB60038A96F /* Record.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3EF44C1FD4CDB60038A96F /* Record.storyboard */; };
+		4B3EF44F1FD4D6160038A96F /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF44E1FD4D6160038A96F /* RecordController.swift */; };
+		4B3EF4511FD4D6D10038A96F /* RecordExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4501FD4D6D10038A96F /* RecordExtension.swift */; };
+		4B3EF4551FD4DD390038A96F /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4541FD4DD390038A96F /* RecordCell.swift */; };
 		4B3EF4581FD4DE140038A96F /* RecordInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4571FD4DE140038A96F /* RecordInfo.swift */; };
-		4B3EF45A1FD4E2320038A96F /* VoicyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4591FD4E2320038A96F /* VoicyModel.swift */; };
+		4B3EF45A1FD4E2320038A96F /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF4591FD4E2320038A96F /* RecordModel.swift */; };
+		4B3EF45E1FD505C50038A96F /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3EF45D1FD505C50038A96F /* DateManager.swift */; };
 		4B5DB6F51FAA18990058C8AC /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */; };
 		4B66D9311FA881A800B861A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9301FA881A800B861A3 /* AppDelegate.swift */; };
 		4B66D9331FA881A800B861A3 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B66D9321FA881A800B861A3 /* TopController.swift */; };
@@ -68,12 +69,13 @@
 		4B1A82991FA991660016C14F /* VoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCell.swift; sourceTree = "<group>"; };
 		4B1A829B1FA9A51F0016C14F /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		4B1A829E1FA9A6910016C14F /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		4B3EF44C1FD4CDB60038A96F /* Voicy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Voicy.storyboard; sourceTree = "<group>"; };
-		4B3EF44E1FD4D6160038A96F /* VoicyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyController.swift; sourceTree = "<group>"; };
-		4B3EF4501FD4D6D10038A96F /* VoicyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyExtension.swift; sourceTree = "<group>"; };
-		4B3EF4541FD4DD390038A96F /* VoicyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyCell.swift; sourceTree = "<group>"; };
+		4B3EF44C1FD4CDB60038A96F /* Record.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Record.storyboard; sourceTree = "<group>"; };
+		4B3EF44E1FD4D6160038A96F /* RecordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordController.swift; sourceTree = "<group>"; };
+		4B3EF4501FD4D6D10038A96F /* RecordExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordExtension.swift; sourceTree = "<group>"; };
+		4B3EF4541FD4DD390038A96F /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		4B3EF4571FD4DE140038A96F /* RecordInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInfo.swift; sourceTree = "<group>"; };
-		4B3EF4591FD4E2320038A96F /* VoicyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicyModel.swift; sourceTree = "<group>"; };
+		4B3EF4591FD4E2320038A96F /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		4B3EF45D1FD505C50038A96F /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
 		4B66D92D1FA881A800B861A3 /* Voicy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voicy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B66D9301FA881A800B861A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,7 +165,7 @@
 		4B3EF4531FD4DD220038A96F /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				4B3EF4541FD4DD390038A96F /* VoicyCell.swift */,
+				4B3EF4541FD4DD390038A96F /* RecordCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -264,10 +266,10 @@
 			isa = PBXGroup;
 			children = (
 				4B3EF4531FD4DD220038A96F /* cell */,
-				4B3EF44C1FD4CDB60038A96F /* Voicy.storyboard */,
-				4B3EF44E1FD4D6160038A96F /* VoicyController.swift */,
-				4B3EF4501FD4D6D10038A96F /* VoicyExtension.swift */,
-				4B3EF4591FD4E2320038A96F /* VoicyModel.swift */,
+				4B3EF44C1FD4CDB60038A96F /* Record.storyboard */,
+				4B3EF44E1FD4D6160038A96F /* RecordController.swift */,
+				4B3EF4501FD4D6D10038A96F /* RecordExtension.swift */,
+				4B3EF4591FD4E2320038A96F /* RecordModel.swift */,
 			);
 			path = Voice;
 			sourceTree = "<group>";
@@ -298,6 +300,7 @@
 				4B5DB6F41FAA18990058C8AC /* AudioPlayManager.swift */,
 				4BE5EB8F1FA95677003DB6B2 /* AppConstants.swift */,
 				4B1A829B1FA9A51F0016C14F /* AppUtility.swift */,
+				4B3EF45D1FD505C50038A96F /* DateManager.swift */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -424,7 +427,7 @@
 				4B1A828F1FA986F60016C14F /* Play.storyboard in Resources */,
 				4B66D93B1FA881A800B861A3 /* LaunchScreen.storyboard in Resources */,
 				4B66D9381FA881A800B861A3 /* Assets.xcassets in Resources */,
-				4B3EF44D1FD4CDB60038A96F /* Voicy.storyboard in Resources */,
+				4B3EF44D1FD4CDB60038A96F /* Record.storyboard in Resources */,
 				4B66D9361FA881A800B861A3 /* Top.storyboard in Resources */,
 				4B05C3891FCAC6E9008FE804 /* sample.mp3 in Resources */,
 			);
@@ -532,18 +535,19 @@
 				4B1A82911FA9870B0016C14F /* PlayController.swift in Sources */,
 				4B5DB6F51FAA18990058C8AC /* AudioPlayManager.swift in Sources */,
 				4B1A82971FA98DAC0016C14F /* PlayInfo.swift in Sources */,
+				4B3EF45E1FD505C50038A96F /* DateManager.swift in Sources */,
 				4B08D5F11FA9BAA70064DB71 /* TopExtension.swift in Sources */,
 				4B1A82951FA98D8A0016C14F /* PlayViewModel.swift in Sources */,
 				4B1A82931FA98D4F0016C14F /* PlayExtension.swift in Sources */,
-				4B3EF45A1FD4E2320038A96F /* VoicyModel.swift in Sources */,
+				4B3EF45A1FD4E2320038A96F /* RecordModel.swift in Sources */,
 				4B66D9331FA881A800B861A3 /* TopController.swift in Sources */,
 				4BE5EB8C1FA95478003DB6B2 /* TopViewModel.swift in Sources */,
 				4B1A829C1FA9A51F0016C14F /* AppUtility.swift in Sources */,
 				4B66D9311FA881A800B861A3 /* AppDelegate.swift in Sources */,
 				4BE5EB901FA95677003DB6B2 /* AppConstants.swift in Sources */,
-				4B3EF4551FD4DD390038A96F /* VoicyCell.swift in Sources */,
-				4B3EF44F1FD4D6160038A96F /* VoicyController.swift in Sources */,
-				4B3EF4511FD4D6D10038A96F /* VoicyExtension.swift in Sources */,
+				4B3EF4551FD4DD390038A96F /* RecordCell.swift in Sources */,
+				4B3EF44F1FD4D6160038A96F /* RecordController.swift in Sources */,
+				4B3EF4511FD4D6D10038A96F /* RecordExtension.swift in Sources */,
 				4BE5EB951FA95792003DB6B2 /* AudioRecordManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

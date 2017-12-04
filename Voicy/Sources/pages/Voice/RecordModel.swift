@@ -8,7 +8,7 @@
 
 import RxSwift
 
-class VoicyModel {
+class RecordModel {
     var recordInfos = [RecordInfo]()
     
     func getRecordInfos() {
@@ -18,13 +18,13 @@ class VoicyModel {
 
         for recordFile in recordFiles {
             guard let attrs = try? FileManager.default.attributesOfItem(atPath: recordFile) else {continue}
-            guard let creationDate = attrs[.creationDate] else {return}
-            guard let size = attrs[.size] else {return}
+            guard let creationDate = attrs[.creationDate] as? Date else {return}
+            guard let size = attrs[.size] as? Int else {return}
             
-            print("creation date = \(creationDate), size = \(size)")
+            let dateStr = getStr(from: creationDate)
+            let duration = "2s"
             
-            let duration = "0.1"
-            let recordInfo = RecordInfo(id: UUID().uuidString, time: "test", duration: duration)
+            let recordInfo = RecordInfo(id: UUID().uuidString, time: dateStr, duration: duration)
             recordInfos.append(recordInfo)
         }
     }

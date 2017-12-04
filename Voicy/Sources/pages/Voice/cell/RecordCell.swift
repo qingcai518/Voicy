@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VoicyCell: UITableViewCell {
+class RecordCell: UITableViewCell {
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var durationLbl: UILabel!
     
