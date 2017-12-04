@@ -90,7 +90,7 @@ extension TopController {
     }
     
     @IBAction func openRecords() {
-        guard let voicy = UIStoryboard(name: "Voicy", bundle: nil).instantiateInitialViewController() else {return}
+        guard let voicy = UIStoryboard(name: "Record", bundle: nil).instantiateInitialViewController() else {return}
         let next = UINavigationController(rootViewController: voicy)
         present(next, animated: true, completion: nil)
     }
