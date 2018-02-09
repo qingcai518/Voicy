@@ -84,9 +84,7 @@ extension TopController {
     }
     
     @IBAction func tel() {
-        UIApplication.shared.open(URL(string: "telprompt://08046189518")!, options: [:]) { flag in
-            print("result = \(flag)")
-        }
+        UIApplication.shared.openURL(URL(string: "telprompt://08046189518")!)
     }
     
     @IBAction func openRecords() {
